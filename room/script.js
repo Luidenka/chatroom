@@ -1,7 +1,7 @@
 var chatroom_name = document.getElementById('chatroom_name');
 var message_history = document.getElementById('chat_messages');
 var input = document.getElementById('send_message');
-var socket = new WebSocket("wss://");
+var socket = new WebSocket("wss://luidenka.github.io/chatroom/room");
 
 socket.onopen = (e) => {
     addMessage('<div>Username have entered the chat room.</div>');
